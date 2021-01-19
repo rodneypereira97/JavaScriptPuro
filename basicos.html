@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+    <h2>
+      <ul>
+        <li><a href="#">Primavera</a></li>
+        <li><a href="#">Verano</a></li>
+        <li><a href="#">Otoño</a></li>
+        <li><a href="#">Invierno</a></li>
+      </ul>
+    </h2>
+  </body>
+  <script>
+    let nombre = "Rodney";
+    let apellido = "Pereira";
+    let saludo = `Hola mi nombre es ${nombre} ${apellido}`;
+    console.log(saludo);
+
+    let ul = ` <ul>
+        <li>primavera</li>
+        <li>verano</li>
+        <li>otoño</li>
+        <li>invierno</li>
+    </ul>`;
+    console.log(ul);
+
+    //Funciones declarada
+
+    function estoEsUnaFuncion() {
+      /*console.log("Uno");
+    console.log("Dos");
+    console.log("Tres");*/
+    }
+    estoEsUnaFuncion();
+
+    function unaFuncionQueDevuelveValor() {
+      console.log("Uno");
+      console.log("Dos");
+      console.log("Tres");
+      return "La funcion ha retornado una cadena de texto";
+    }
+    //let valorDeFuncion = unaFuncionQueDevuelveValor();
+    //console.log(valorDeFuncion);
+
+    function saludar(nombre = "Desconocido", edad = 0) {
+      console.log(`Hola mi nombres es ${nombre} y tengo ${edad} años`);
+    }
+    /*saludar("Rodney", 23);
+    saludar();*/
+
+    //funciones declaradas VS fuciones expresadas
+
+    funcionDeclarada();
+
+    function funcionDeclarada() {
+      //   console.log(
+      //     "Esto e una funcion declarada puede invocarse en cualquier parte de nuestro codigo incluso antes de que la funcion sea declarada"
+      //   );
+    }
+
+    funcionDeclarada();
+
+    //funcion anonima
+    const funcionExpresada = function () {
+      //    console.log("Esto es una funcion expresada")
+    };
+    funcionExpresada();
+
+    //Array(arreglos)
+    const a = [];
+    const b = [1, true, "hola", ["A", "B", "C", [1, 2, 3]]];
+    console.log(a);
+    console.log(b);
+    console.log(b.length);
+    console.log(b[2]);
+    console.log(b[0]);
+    console.log(b[3]);
+    console.log(b[3][2]);
+    console.log(b[3][3][1]);
+
+    const c = Array.of("X", "Y", "Z", 9, 8, 7);
+    console.log(c);
+
+    const d = Array(100).fill(false);
+    console.log(d);
+
+    const e = new Array();
+    console.log(e);
+
+    const f = new Array(1, 2, 3, true, false);
+    console.log(f);
+
+    const colores = ["Rojo", "Verde", "Azul"];
+    console.log(colores);
+
+    //Agregar Color
+    colores.push("Negro");
+    console.log(colores);
+
+    //Quitar color
+    colores.pop();
+    console.log(colores);
+
+    colores.forEach(function (el, index) {
+      console.log(`<li id="${index}">${el}</li>`);
+    });
+
+    const a1 = new String("Hola");
+    //console.log(a);
+
+    const b1 = {};
+    console.log(b1);
+  </script>
+</html>
