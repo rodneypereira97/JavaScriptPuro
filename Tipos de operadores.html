@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+    <h2>
+      <ul>
+        <li><a href="#">Primavera</a></li>
+        <li><a href="#">Verano</a></li>
+        <li><a href="#">Otoño</a></li>
+        <li><a href="#">Invierno</a></li>
+      </ul>
+    </h2>
+  </body>
+  <script>
+    /*Operadores*/
+    /*Aritmeticas ...+-*%0*/
+
+    let a = 5 + 5 - 10;
+    // console.log(a);
+    /*
+    = 1 igual es asignacion de variables
+    == 2 iguales es comparacion de valores
+    === 3 iguales es comparacion de tipo de dato de valor
+    != 
+    */
+    /* Incremento decremento-------
+
+   
+   */
+
+    let i = 2;
+
+    //i = i + 2;
+    // i += 3;
+
+    // operador unico
+    // i++;
+    // i--;
+    // --i;
+    // ++i;
+
+    let edad = 17;
+
+    if (edad > 17) {
+      console.log("Eres mayor de edad1");
+    } else {
+      console.log("Eres menor de edad");
+    }
+
+    if (edad >= 17) {
+      console.log("Eres mayor de edad");
+    } else {
+      console.log("Eres menor de edad");
+    }
+
+
+//    dejame dormir 0hrs - 5hrs
+//     buenos dias 6hrs - 11hrs
+//     buenas tardes 12hrs - 18hrs
+//     buenas noches 19hrs - 23hrs
+
+let hora = 23;
+
+// if(hora >= 0 && hora <=5){
+//     console.log("Dejame dormir");
+
+// }else if (hora >= 6 && hora <=11){
+//     console.log("Buenos dias");
+
+// }else if(hora >= 12 && hora <=18){
+//     console.log("Buenas tardes");
+
+// }else{
+//     console.log("Buenas noches");
+
+// }
+
+if(hora >= 0 && hora < 6){
+    console.log("Dejame dormir");
+
+}else if (hora > 5 && hora < 12){
+    console.log("Buenos dias");
+
+}else if(hora > 11 && hora < 19){
+    console.log("Buenas tardes");
+
+}else{
+    console.log("Buenas noches");
+
+}
+
+
+
+  </script>
+</html>
